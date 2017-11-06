@@ -90,7 +90,26 @@ function warnUser(): void {
 /*
 	Assertions
 	====================*/
-let stringDefault: any = "Dron";
+let stringDefault: any = 10;
 
 let stringLen_1: number = (stringDefault as string).length;
 // OR: let stringLen_2: number = (<string>stringDefault).length; // 4
+
+
+
+/*
+	Never
+	====================*/
+// Функция, возвращающая never, должна иметь недостижимую точку окончания функции.
+function error(message: string): never {
+	throw new Error(message);
+}
+// Выведенный тип результата never
+function fail() {
+	return error("Something failed");
+}
+// Функция, возвращающая never, должна иметь недостижимую точку окончания функции.
+function infiniteLoop(): never {
+	while (true) {
+	}
+}
