@@ -68,9 +68,11 @@ function warnUser() {
 /*
     Assertions
     ====================*/
+// let stringDefault: any = "Smith";
 var stringDefault = 10;
 var stringLen_1 = stringDefault.length;
 // OR: let stringLen_2: number = (<string>stringDefault).length; // 4
+console.log(stringLen_1);
 /*
     Never
     ====================*/
@@ -86,4 +88,12 @@ function fail() {
 function infiniteLoop() {
     while (true) {
     }
+}
+/*
+    Union
+    ====================*/
+var names;
+var sum = "qweqwe";
+if (typeof sum === 'number') {
+    console.log("Sum: ", sum);
 }

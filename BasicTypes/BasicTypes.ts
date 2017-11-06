@@ -90,11 +90,12 @@ function warnUser(): void {
 /*
 	Assertions
 	====================*/
-let stringDefault: any = 10;
+// let stringDefault: any = "Smith";
+let stringDefault: any | string = 10;
 
 let stringLen_1: number = (stringDefault as string).length;
 // OR: let stringLen_2: number = (<string>stringDefault).length; // 4
-
+console.log(stringLen_1);
 
 
 /*
@@ -112,4 +113,24 @@ function fail() {
 function infiniteLoop(): never {
 	while (true) {
 	}
+}
+
+
+/*
+	Union
+	====================*/
+let names: string[] | number[] | string | number | boolean;
+// names = ["Smith", "10"]; // ["Smith", "10"]
+// names = "Smith"; // "Smith"
+
+
+/*
+	Type
+	====================*/
+type stringOrNumberType = string | number;
+
+let sum: stringOrNumberType = "qweqwe";
+
+if(typeof sum === 'number') {
+	console.log("Sum: ", sum);
 }
