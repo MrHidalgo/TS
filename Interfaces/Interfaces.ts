@@ -10,7 +10,7 @@ let myObject1 = {
 	label: "string name"
 };
 
-	// printLabel1(myObject1);
+// printLabel1(myObject1);
 
 
 /*
@@ -30,7 +30,7 @@ let myObject2 = {
 	label: "string name"
 };
 
-	// printLabel2(myObject2);
+// printLabel2(myObject2);
 
 
 /*
@@ -62,9 +62,9 @@ function createSquare(config: squareConfig) : {
 	return newSquare;
 }
 
-	// createSquare({color: "black"}) // {color: "black", area: 10}
-	// createSquare({colour: "black", width: 5}) // Error: colour does not exist in 'squareConfig'
-	// createSquare({color: "black", width: 5}) // {color: "black", area: 25}
+// createSquare({color: "black"}) // {color: "black", area: 10}
+// createSquare({colour: "black", width: 5}) // Error: colour does not exist in 'squareConfig'
+// createSquare({color: "black", width: 5}) // {color: "black", area: 25}
 
 
 /*
@@ -80,8 +80,6 @@ interface squareConfig {
 }
 
 
-
-
 /*
 	Interface: readonly
 	====================*/
@@ -95,21 +93,19 @@ let point: Point = {
 	y: 0
 };
 
-	// point.x // 1
-	// point.y // 0
-	// point.x = 5 // Error variable readonly
+// point.x // 1
+// point.y // 0
+// point.x = 5 // Error variable readonly
 
 let arr : number[] = [1, 2, 3, 4, 5];
 
-// console.log(arr); // [1, 2, 3, 4, 5]
-
 let readOnlyArr : ReadonlyArray<number> = arr;
 
-	// readOnlyArr // [1, 2, 3, 4, 5]
-	// readOnlyArr[0] = 12 // Error variable readonly
-	// readOnlyArr.push(100) // Error variable readonly
-	// readOnlyArr.length = 0 // Error variable readonly
-	// arr = readOnlyArr // Error variable readonly
+// readOnlyArr // [1, 2, 3, 4, 5]
+// readOnlyArr[0] = 12 // Error variable readonly
+// readOnlyArr.push(100) // Error variable readonly
+// readOnlyArr.length = 0 // Error variable readonly
+// arr = readOnlyArr // Error variable readonly
 
 
 /*

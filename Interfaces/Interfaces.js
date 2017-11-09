@@ -45,7 +45,6 @@ var point = {
 // point.y // 0
 // point.x = 5 // Error variable readonly
 var arr = [1, 2, 3, 4, 5];
-// console.log(arr); // [1, 2, 3, 4, 5]
 var readOnlyArr = arr;
 var mySearch;
 /**
