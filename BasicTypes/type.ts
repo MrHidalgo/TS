@@ -1,0 +1,10 @@
+/*
+	Type
+	====================*/
+type stringOrNumberType = string | number;
+
+let sum: stringOrNumberType = "qweqwe";
+
+if(typeof sum === 'number') {
+	console.log("Sum: ", sum);
+}
